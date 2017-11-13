@@ -1,6 +1,19 @@
 <template>
 <div>
   <h1>This is page About!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
   <nuxt-link to="/" class="button--green test">Let's go home</nuxt-link>
 </div>
 </template>

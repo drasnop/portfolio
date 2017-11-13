@@ -1,12 +1,4 @@
-// import {resolve} from 'path'
-
 module.exports = {
-  // modules: [
-  //   'nuxt-sass-resources-loader'
-  // ],
-  // sassResources: [
-  //   resolve(__.dirname, '~/assets/variables.scss')
-  // ],
   /*
    ** Headers of the page
    */
@@ -26,6 +18,9 @@ module.exports = {
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
+    }, {
+      rel: 'stylesheet',
+      href: '/css/bootstrap-grid.css'
     }]
   },
   /*
