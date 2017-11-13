@@ -21,6 +21,9 @@ module.exports = {
     }, {
       rel: 'stylesheet',
       href: '/css/bootstrap-grid.css'
+    }, {
+      rel: 'stylesheet',
+      href: '//fonts.googleapis.com/css?family=Open+Sans'
     }]
   },
   /*

@@ -1,25 +1,9 @@
 <template>
-<div>
+<div class='containter'>
   <h1>This is page About!</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-    </div>
-  </div>
-  <nuxt-link to="/" class="button--green test">Let's go home</nuxt-link>
+  <nuxt-link to="/" class="button">Let's go home</nuxt-link>
 </div>
 </template>
 
 <style lang='scss'>
-.test{
-  color: $test;
-}  
 </style>
