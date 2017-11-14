@@ -8,7 +8,8 @@
             ".git",
             ".nuxt",
             "node_modules",
-            "dist"
+            "dist",
+            "css"
          ],
          "file_exclude_patterns": [
             ".git*",
