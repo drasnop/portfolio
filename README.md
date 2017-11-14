@@ -17,6 +17,10 @@ $ npm start
 
 # generate static project
 $ npm run generate
-```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+# generate static project as Single Page Application
+$ npm run generate --spa
+
+# deploy to firebase as SPA
+$ firebase deploy
+```
