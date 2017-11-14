@@ -20,12 +20,13 @@ module.exports = {
       href: '/favicon.ico'
     }, {
       rel: 'stylesheet',
-      href: '/css/bootstrap-grid.css'
-    }, {
-      rel: 'stylesheet',
       href: '//fonts.googleapis.com/css?family=Open+Sans'
     }]
   },
+  css: [
+    '~/css/bootstrap-reboot.css',
+    '~/css/bootstrap-grid.css'
+  ],
   /*
    ** Customize the progress bar color
    */
