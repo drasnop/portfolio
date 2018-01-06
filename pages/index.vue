@@ -1,6 +1,7 @@
 <template>
 <div>
 
+<div class="navbar-offset" id='about'/>
 <Navbar/>
 
 <div class='section'>
@@ -18,6 +19,8 @@
     </div>
   </div>
 </div>
+
+<div id="projects">
 
 <div class='section blue-section'>
   <div class='container'>
@@ -65,16 +68,21 @@
 </div>
 
 </div>
+
+<Contact/>
+
+</div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import LinkButton from '~/components/LinkButton.vue'
 import Navbar from '~/components/Navbar.vue'
+import Contact from '~/components/Contact.vue'
 
 export default {
   components: {
-    Logo, LinkButton, Navbar
+    Logo, LinkButton, Navbar, Contact
   }
 }
 </script>
@@ -86,6 +94,10 @@ export default {
   @media (min-width: $break-small){
     padding: 120px 0;
   }
+}
+
+.navbar-offset{
+  height: 36px;
 }
 
 .blue-section{

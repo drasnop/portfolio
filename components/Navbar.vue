@@ -5,11 +5,11 @@
       <div class='offset-sm-1 col-sm-2 col-3'>
         <img src='/img/logo.svg' class='img-fluid'>
       </div>
-      <div class='nav offset-sm-4 col-sm-4 col-9'>
-        <a class='header-link active' href='#about'>ABOUT</a>
-        <a class='header-link' href='#projects'>PROJECTS</a>
-        <a class='header-link' href='#contact'>CONTACT</a>
-      </div>
+      <scrollactive class='nav offset-sm-4 col-sm-4 col-9'>
+        <a class='nav-item scrollactive-item' href='#about'>ABOUT</a>
+        <a class='nav-item scrollactive-item' href='#projects'>PROJECTS</a>
+        <a class='nav-item scrollactive-item' href='#contact'>CONTACT</a>
+      </scrollactive>
     </div>
   </div>
 </div>
@@ -22,7 +22,13 @@ export default {
 
 <style lang='scss'>
 .Navbar{
-  padding: 44px 0;
+  padding: 8px 0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .nav{
@@ -31,9 +37,10 @@ export default {
   justify-content: space-between;
 }
 
-.header-link{
+.nav-item{
   color: $text-primary;
   text-align: center;
+  border-bottom: 3px solid transparent;
   padding: 4px 4px;
   font-size: 14px;
   @media (min-width: 576px){
@@ -42,7 +49,7 @@ export default {
   } 
 }
 
-.header-link.active{
-  border-bottom: 3px solid $header-link-underline;
+.nav-item.is-active{
+  border-bottom: 3px solid $nav-item-underline;
 }
 </style>
