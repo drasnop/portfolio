@@ -10,7 +10,7 @@
       <div class='nav offset-sm-5 col-sm-4'>
         <a class='header-link' href='#about'>ABOUT</a>
         <a class='header-link' href='#projects'>PROJECTS</a>
-        <a class='header-link' href='#contacts'>CONTACTS</a>
+        <a class='header-link' href='#contact'>CONTACT</a>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@
       </div>
 
       <div class='offset-sm-2 col-sm-4 align-self-end pos-relative'>
-        <img src='/img/antoine.jpg' class='img-fluid img-floating' style='bottom:-180px'>
+        <img src='/img/antoine.jpg' class='img-fluid img-raised img-floating' style='bottom:-180px'>
       </div>
     </div>
   </div>
@@ -33,9 +33,9 @@
 
 <div class='section blue-section'>
   <div class='container'>
-    <div class='row'>
-      <div class='offset-sm-1 col-sm-3 align-self-end pos-relative'>
-        <img src='/img/xodo-android.png' class='img-fluid img-floating' style='bottom:-180px'>
+    <div class='row extra-padding-top'>
+      <div class='offset-sm-1 col-sm-3 align-self-center pos-relative'>
+        <img src='/img/xodo-android.png' class='img-fluid img-raised'>
       </div>
       <div class='offset-sm-3 col-sm-4'>
         <h1>Xodo</h1>
@@ -55,7 +55,7 @@
         <link-button text="What is your quest?" to='/about'></link-button>
       </div>
       <div class='offset-sm-2 col-sm-4 align-self-center pos-relative'>
-        <img src='/img/paperquest.png' class='img-fluid img-floating' style='position: relative'/>
+        <img src='/img/paperquest.png' class='img-fluid img-raised'/>
       </div>
     </div>
   </div>
@@ -64,8 +64,8 @@
 <div class='section blue-section'>
   <div class='container'>
     <div class='row'>
-      <div class='offset-sm-1 col-sm-4 align-self-start pos-relative'>
-        <img src='/img/twistAndPulse.png' class='img-fluid img-floating' style='top:-180px'>
+      <div class='offset-sm-1 col-sm-4 align-self-center pos-relative'>
+        <img src='/img/twistAndPulse.png' class='img-fluid img-raised'>
       </div>
       <div class='offset-sm-2 col-sm-4'>
         <h1>Twist & Pulse</h1>
@@ -104,6 +104,10 @@ export default {
   background-color: $section-bg-color;
 }
 
+.row.extra-padding-top{
+  padding-top: 50px;
+}
+
 .project-short-description{
   color: $text-secondary;
   text-align: justify;
@@ -113,8 +117,11 @@ export default {
   position: relative;
 }
 
-.img-floating{
+.img-raised{
   box-shadow: 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 12px 17px 2px rgba(0, 0, 0, 0.14);
+}
+
+.img-floating{
   position: absolute;
 }
 </style>
