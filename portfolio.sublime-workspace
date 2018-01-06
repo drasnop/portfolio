@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"img-f",
+				"img-floating"
+			],
+			[
+				"$te",
+				"$text-secondary\t(constants.scss)"
+			],
+			[
 				"img",
 				"img-fluid"
 			],
@@ -88,51 +96,28 @@
 	"buffers":
 	[
 		{
-			"file": "pages/index.vue",
-			"settings":
-			{
-				"buffer_size": 1257,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "{\n\t// Copy any modified settings to `User/Emmet.sublime-settings`\n\t// otherwise modifications will not survive updates.\n\n\t// Path to folder where Emmet should look for extensions\n\t// http://docs.emmet.io/customization/\n\t\"extensions_path\": \"~/emmet\",\n\n\t// Disable completions of HTML attributes\n\t// with this option disabled, you can get attribute list completions\n\t// inside opening HTML tags.\n\t// WARNING: with this option disabled, Tab key expander will not\n\t// work inside opening HTML attributes\n\t\"disable_completions\": false,\n\n\t// With this option enabled, all Emmet's CSS snippets\n\t// will be available in standard auto-complete popup\n\t\"show_css_completions\": true,\n\n\t// List of scopes where Emmet CSS completions should be available\n\t\"css_completions_scope\": \"source.css - meta.selector.css - meta.property-value.css, source.scss - meta.selector.scss - meta.property-value.scss, source.less - meta.selector.css - meta.property-value.css\",\n\n\t// Remove default HTML tag completions on plugin start\n\t// You should restart editor after changing this option\n\t\"remove_html_completions\": false,\n\n\t// A comma-separated list of scopes where Emmet’s Tab key\n\t// abbreviation expander should be disabled\t \n\t\"disable_tab_abbreviations_for_scopes\": \"\",\n\n\t// A regexp for scope name: if it matches, Tab handler won’t work\n\t// The reason to use this preference is that ST2 has buggy scope matcher\n\t// which may still trigger Tab handler even if it's restricted by context\n\t\"disable_tab_abbreviations_for_regexp\": \"source\\\\.(?!css).+?\\\\stext\\\\.html\",\n\n\t// Exit tabstop mode when enter key is pressed\n\t\"clear_fields_on_enter_key\": true,\n\n\t// A comma-separated list of disabled action names.\n\t// Listed action will not be triggered by default keyboard\n\t// shortcut.\n\t// Use \"all\" value to disable all shortcuts at once\n\t\"disabled_keymap_actions\": \"\",\n\n\t// By default, Emmet overrides Tab key to effectively expand abbreviations.\n\t// The downside of this approach is that you can’t expand regular ST2\n\t// snippets (like `php`). Since it’s not currently possible to get a list\n\t// of ST2 snippets via API, you can provide a list of scopes where Emmet’s\n\t// Tab trigger should be disabled when expanding simple abbreviation.\n\t// If entered abbreviation (like `php`) wasn’t found in Emmet snippets list\n\t// or \"known_html_tags\" preference, Tab handler will not be triggered.\n\t// Leave this setting blank to disable this feature\n\t\"disabled_single_snippet_for_scopes\": \"text.html\",\n\n\t// A space-separated list of single snippets that should be \n\t// forcilbly disabled (not handled) for Emmet even if it \n\t// has such abbreviation. \n\t// This option is useful if you wish the enumerated snippets\n\t// should be handled by Sublime Text.\n\t// Example value: \"script style html\"\n\t\"disabled_single_snippets\": \"\",\n\n\t// A space separated list of all known HTML tags,\n\t// used together with \"disabled_on_single_snippets\" option\n\t\"known_html_tags\": \"html head title base link meta style script noscript body section nav article aside h1 h2 h3 h4 h5 h6 hgroup header footer address p hr pre blockquote ol ul li dl dt dd figure figcaption div a em strong small s cite q dfn abbr data time code var samp kbd sub sup i b u mark ruby rt rp bdi bdo span br wbr ins del img iframe embed object param video audio source track canvas map area svg math table caption colgroup col tbody thead tfoot tr td th form fieldset legend label input button select datalist optgroup option textarea keygen output progress meter details summary command menu main template\",\n\n\t\"empty_elements\": \"area base basefont br col frame hr img input isindex link meta param embed\",\n\n\t// If set to `true`, Emmet will automatically insert final tabstop\n\t// at the end of expanded abbreviation\n\t\"insert_final_tabstop\": false,\n\n\t// Try to automatically detect XHTML dialect in HTML documents.\n\t// With this option enabled, your custom profile for HTML documents may not work.\n\t\"autodetect_xhtml\": true,\n\n\t// Use old Tab handler to expand abbreviations.\n\t// With this option enabled, editor may better handle Tab key\n\t// (especially with other plugins that overrides Tab key),\n\t// but will spit \"slow plugin\" message\n\t\"use_old_tab_handler\": false,\n\n\t// Disables PyV8 auto-update. Useful for users who installed PyV8\n\t// manually from https://github.com/emmetio/pyv8-binaries because\n\t// of local proxy restrictions\n\t\"disable_pyv8_update\": false,\n\n\t// Expand abbreviations inside PHP strings on single line\n\t// (e.g. without formatting)\n\t\"php_single_line\": false,\n\n\t///////////////////////////////\n\t// Emmet customization\n\t// Each section has the same meaning as the same-named JSON file \n\t// described here:\n\t// http://docs.emmet.io/customization/\n\t///////////////////////////////\n\n\n\t// Custom snippets definitions, as per https://github.com/emmetio/emmet/blob/master/snippets.json\n\t\"snippets\": {\n\t\t// \"html\": {\n\t\t// \t\"abbreviations\": {\n\t\t// \t\t\"example\": \"<div class='example' title='Custom element example'>\"\n\t\t// \t}\n\t\t// }\n\t},\n\n\t// Emmet preferences\n\t// List of all available preferences:\n\t// http://docs.emmet.io/customization/preferences/\n\t\"preferences\": {\n\t\t// \"css.valueSeparator\": \": \",\n\t\t// \"css.propertyEnd\": \";\"\n\t},\n\n\t// Output profiles for syntaxes\n\t// http://docs.emmet.io/customization/syntax-profiles/\n\t\"syntaxProfiles\": {\n\t\t// Enable XHTML dialect for HTML syntax\n\t\t// \"html\": \"xhtml\"\n\t\t// \n\t\t// Write chained CSS abbreviations on single line:\n\t\t// \"css\": \"css_line\"\n\t}\n}\n",
-			"file": "/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 5421,
-				"line_ending": "Windows",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"file": "/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 293,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Antoine/Dropbox/Personalization/Emmet/profiles.json",
-			"settings":
-			{
-				"buffer_size": 121,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "layouts/default.vue",
 			"settings":
 			{
 				"buffer_size": 329,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pages/index.vue",
+			"settings":
+			{
+				"buffer_size": 4154,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Antoine/programmation/web/ecoation/Ecoation Front-end Challenge/farms.json",
+			"settings":
+			{
+				"buffer_size": 1352,
 				"line_ending": "Unix"
 			}
 		},
@@ -225,24 +210,20 @@
 	"expanded_folders":
 	[
 		"/C/Users/Antoine/programmation/web/portfolio",
-		"/C/Users/Antoine/programmation/web/portfolio/assets",
-		"/C/Users/Antoine/programmation/web/portfolio/assets/scss",
-		"/C/Users/Antoine/programmation/web/portfolio/components",
-		"/C/Users/Antoine/programmation/web/portfolio/css",
-		"/C/Users/Antoine/programmation/web/portfolio/layouts",
-		"/C/Users/Antoine/programmation/web/portfolio/pages",
 		"/C/Users/Antoine/programmation/web/portfolio/static",
 		"/C/Users/Antoine/programmation/web/portfolio/static/img"
 	],
 	"file_history":
 	[
-		"/C/Users/Antoine/Dropbox/Personalization/Emmet/syntaxProfiles.json",
+		"/C/Users/Antoine/Dropbox/Personalization/Emmet/profiles.json",
+		"/C/Users/Antoine/programmation/web/portfolio/portfolio.sublime-project",
 		"/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Antoine/Dropbox/Personalization/Emmet/syntaxProfiles.json",
 		"/C/Users/Antoine/Downloads/bootstrap-4.0.0-beta.2/bootstrap-4.0.0-beta.2/dist/css/bootstrap-reboot.css",
 		"/C/Users/Antoine/programmation/web/portfolio/layouts/default.vue",
 		"/C/Users/Antoine/programmation/web/portfolio/nuxt.config.js",
 		"/C/Users/Antoine/programmation/web/portfolio/assets/variables.scss",
-		"/C/Users/Antoine/programmation/web/portfolio/portfolio.sublime-project",
 		"/C/Users/Antoine/programmation/web/personal-website/.firebaserc",
 		"/C/Users/Antoine/programmation/web/personal-website/firebase.json",
 		"/C/Users/Antoine/programmation/web/portfolio/bower.json",
@@ -334,6 +315,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img-floating",
+			"img-fluid",
+			"blue-section",
+			"row",
+			"offset",
+			"<p>",
+			"\"",
 			"/static",
 			"/css",
 			"div",
@@ -454,14 +442,7 @@
 			"unfoldLogo",
 			".round-image",
 			"$location",
-			"$sce",
-			"aboutCtrl",
-			"projectsCtrl",
-			"ng-show=\"model.state<=0\"",
-			"block",
-			".visi",
-			"sm",
-			"TwistAndPulse"
+			"$sce"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -469,6 +450,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"'",
 			"main",
 			"footer",
 			"header",
@@ -485,128 +467,11 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pages/index.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1257,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1004,
-								1004
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5421,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								249,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 293,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								293,
-								293
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Antoine/Dropbox/Personalization/Emmet/profiles.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 121,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "layouts/default.vue",
 					"semi_transient": false,
 					"settings":
@@ -632,11 +497,70 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 1,
+					"file": "pages/index.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								898,
+								898
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Antoine/programmation/web/ecoation/Ecoation Front-end Challenge/farms.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "components/LinkButton.vue",
 					"semi_transient": false,
 					"settings":
@@ -661,11 +585,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "nuxt.config.js",
 					"semi_transient": false,
 					"settings":
@@ -696,11 +620,11 @@
 						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "pages/about.vue",
 					"semi_transient": false,
 					"settings":
@@ -725,11 +649,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 6,
 					"file": "assets/scss/constants.scss",
 					"semi_transient": false,
 					"settings":
@@ -755,7 +679,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -800,7 +724,7 @@
 	"project": "portfolio.sublime-project",
 	"replace":
 	{
-		"height": 112.0
+		"height": 168.0
 	},
 	"save_all_on_build": true,
 	"select_file":

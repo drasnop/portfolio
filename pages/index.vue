@@ -1,20 +1,7 @@
 <template>
 <div>
 
-<div class='nav'>
-  <div class='container'>
-    <div class='row'>
-      <div class='offset-sm-1 col-sm-1'>
-        <img src='/img/logo.svg' class='img-fluid'>
-      </div>
-      <div class='nav offset-sm-5 col-sm-4'>
-        <a class='header-link' href='#about'>ABOUT</a>
-        <a class='header-link' href='#projects'>PROJECTS</a>
-        <a class='header-link' href='#contact'>CONTACT</a>
-      </div>
-    </div>
-  </div>
-</div>
+<Navbar/>
 
 <div class='section'>
   <div class='container'>
@@ -33,8 +20,8 @@
 
 <div class='section blue-section'>
   <div class='container'>
-    <div class='row extra-padding-top'>
-      <div class='offset-sm-1 col-sm-3 align-self-center pos-relative'>
+    <div class='row align-items-center extra-padding-top'>
+      <div class='offset-sm-1 col-sm-3 pos-relative'>
         <img src='/img/xodo-android.png' class='img-fluid img-raised'>
       </div>
       <div class='offset-sm-3 col-sm-4'>
@@ -48,13 +35,13 @@
 
 <div class='section'>
   <div class='container'>
-    <div class='row'>
+    <div class='row align-items-center'>
       <div class='offset-sm-1 col-sm-4'>
         <h1>PaperQuest</h1>
         <p class='project-short-description'>The literature review is a key component of academic research, that allows researchers to build upon each other’s work. We present PaperQuest, a visualization tool that supports efficient decision making, by only displaying the information useful at a given step of the exploration process.</p>
         <link-button text="What is your quest?" to='/about'></link-button>
       </div>
-      <div class='offset-sm-2 col-sm-4 align-self-center pos-relative'>
+      <div class='offset-sm-2 col-sm-4 pos-relative'>
         <img src='/img/paperquest.png' class='img-fluid img-raised'/>
       </div>
     </div>
@@ -63,8 +50,8 @@
 
 <div class='section blue-section'>
   <div class='container'>
-    <div class='row'>
-      <div class='offset-sm-1 col-sm-4 align-self-center pos-relative'>
+    <div class='row align-items-center'>
+      <div class='offset-sm-1 col-sm-4 pos-relative'>
         <img src='/img/twistAndPulse.png' class='img-fluid img-raised'>
       </div>
       <div class='offset-sm-2 col-sm-4'>
@@ -82,19 +69,16 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import LinkButton from '~/components/LinkButton.vue'
+import Navbar from '~/components/Navbar.vue'
 
 export default {
   components: {
-    Logo, LinkButton
+    Logo, LinkButton, Navbar
   }
 }
 </script>
 
 <style lang='scss'>
-.header-link{
-  color: $text-primary;
-  font-size: 16px;
-}
 
 .section{
   padding: 120px 0;
@@ -123,5 +107,6 @@ export default {
 
 .img-floating{
   position: absolute;
+  max-width: calc(100% - 30px);
 }
 </style>

@@ -1,19 +1,22 @@
 /* theme colors */
 
-$blue: #247BA0;
-$lightblue: #E2F3F0;
-$pink: #FF1654;
+$blue: #247ba0;
+$lightblue: #e2f3f0;
+$pink: #ff1654;
 
 /* UI components colors */
 
 $button-bg-color: $pink;
 $button-color: white;
 $section-bg-color: $lightblue;
-$text-primary: rgba(0, 0, 0, .87);
-$text-secondary: rgba(0, 0, 0, .54);
-$text-disabled: rgba(0, 0, 0, .38);
+$header-link-underline: $pink;
+$text-primary: rgba(0, 0, 0, 0.87);
+$text-secondary: rgba(0, 0, 0, 0.54);
+$text-disabled: rgba(0, 0, 0, 0.38);
 
 /* elevation */
 
-$elevation-1: 0 0 2px 0 rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .12), 0 1px 3px 0 rgba(0, 0, 0, .20);
-$elevation-2: 0 0 4px 0 rgba(0, 0, 0, .14), 0 3px 4px 0 rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .20);
+$elevation-1: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+  0 1px 3px 0 rgba(0, 0, 0, 0.2);
+$elevation-2: 0 0 4px 0 rgba(0, 0, 0, 0.14), 0 3px 4px 0 rgba(0, 0, 0, 0.12),
+  0 1px 5px 0 rgba(0, 0, 0, 0.2);
