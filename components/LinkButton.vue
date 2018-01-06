@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link class="link-button" :to='to'>
+  <nuxt-link class="link-button align-self-center" :to='to'>
   {{text}}
   </nuxt-link>
 </template>
