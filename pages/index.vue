@@ -43,10 +43,10 @@
       <div class='project-text offset-sm-1 col-sm-4'>
         <h1>PaperQuest</h1>
         <p class='project-short-description'>The literature review is a key component of academic research, that allows researchers to build upon each other’s work. We present PaperQuest, a visualization tool that supports efficient decision making, by only displaying the information useful at a given step of the exploration process.</p>
-        <link-button text="What is your quest?" to='/about'></link-button>
+        <link-button text="What is your quest?" to='/paperquest'></link-button>
       </div>
       <div class='offset-sm-2 col-sm-4 pos-relative'>
-        <img src='/img/paperquest.png' class='img-fluid img-raised'/>
+        <img src='/img/paperquest-small.png' class='img-fluid img-raised'/>
       </div>
     </div>
   </div>
@@ -122,14 +122,6 @@ export default {
   color: $text-secondary;
   text-align: justify;
   margin-bottom: 24px;
-}
-
-.pos-relative{
-  position: relative;
-}
-
-.img-raised{
-  box-shadow: 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 12px 17px 2px rgba(0, 0, 0, 0.14);
 }
 
 .img-floating{
