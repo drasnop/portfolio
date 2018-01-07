@@ -17,7 +17,7 @@
 
 <script>
 export default{
-  name: 'project-title',
+  name: 'ProjectTitle',
   props: ['name', 'title']
 }
 </script>
