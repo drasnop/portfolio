@@ -1,9 +1,11 @@
 <template>
-<div class="hero pos-relative">
-  <nuxt-link to="/" class="backButton col-sm-1">
-    <img class="backArrow" src="/img/chevron-left-white.svg" alt="back to home page">
-  </nuxt-link>
+<div>
 
+<nuxt-link to="/" class="backButton col-sm-1">
+  <img class="backArrow" src="/img/chevron-left-white.svg" alt="back to home page">
+</nuxt-link>
+
+<div class="hero pos-relative">
   <div class='container'>
     <div class='row'>
       <div class="offset-sm-2 col-sm-8">
@@ -11,41 +13,34 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class='container pageTitleContainer'>
-    <div class='row'>
-      <div class="offset-sm-1 col-sm-10">
-        <div class="pageTitle">
-          <span class="projectName">{{name}}</span>
-          <span class="projectTitle">{{title}}</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 </template>
 
 <script>
 export default{
   name: 'project-hero',
-  props: ['name', 'title', 'image']
+  props: ['image']
 }
 </script>
 
 <style lang='scss'>
 .hero{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 70vh;
   background-color: $hero-bg-color;
 }
 
 .backButton{
   position: fixed;
   left: 0;
-  top: 0;
+  top: 14px;
   height: 60px;
+  z-index: 101;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,28 +49,5 @@ export default{
 .backArrow{
   width: 24px;
   height: 24px;
-}
-
-.pageTitleContainer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.pageTitle{
-  color: white;
-  margin-bottom: 24px;
-  font-size: 26px;
-}
-
-.projectName{
-  font-weight: bold;
-}
-
-.projectTitle{
-  opacity: .7;
-  font-weight: normal;
-  margin-left: 2em;
 }
 </style>

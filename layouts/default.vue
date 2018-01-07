@@ -28,4 +28,8 @@ a:hover{
 .pos-relative{
   position: relative;
 }
+
+.largeText{
+  font-size: 21px;
+}
 </style>
