@@ -2,10 +2,10 @@
 <div class='Navbar'>
   <div class='container'>
     <div class='row align-items-center'>
-      <div class='offset-sm-1 col-sm-1 col-3'>
-        <img src='/img/logo.svg' class='img-fluid'>
+      <div class='offset-sm-1 col-sm-3 col-3'>
+        <img src='/img/logo.svg' class='logo'>
       </div>
-      <scrollactive class='nav offset-sm-5 col-sm-4 col-9'>
+      <scrollactive class='nav offset-sm-2 col-sm-4 col-9'>
         <a class='nav-item scrollactive-item' href='#about'>ABOUT</a>
         <a class='nav-item scrollactive-item' href='#projects'>PROJECTS</a>
         <a class='nav-item scrollactive-item' href='#contact'>CONTACT</a>
@@ -29,6 +29,14 @@ export default {
   left: 0;
   right: 0;
   z-index: 1000;
+}
+
+.logo{
+  width: 100%;
+  height: auto;
+  @media(min-width: $break-small){
+    width: 64px;
+  }
 }
 
 .nav{
