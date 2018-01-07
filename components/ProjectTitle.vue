@@ -1,9 +1,15 @@
 <template>
 
 <div class='pageTitleContainer'>
-  <div class="pageTitle">
-    <div class="projectName">{{name}}</div>
-    <div class="projectTitle">{{title}}</div>
+  <div class='container'>
+    <div class='row'>
+      <div class="pageTitle offset-sm-1">
+        <div class='center-align'>
+          <div class="projectName">{{name}}</div>
+          <div class="projectTitle">{{title}}</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -25,11 +31,14 @@ export default{
   right: 0;
   z-index: 100;
   background-color: $hero-bg-color;
-  text-align: center;
   display: none;
   @media (min-width: $break-small){
     display: block;
   }
+}
+
+.center-align{
+  text-align: center;
 }
 
 .pageTitle{
