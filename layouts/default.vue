@@ -30,6 +30,9 @@ a:hover{
 }
 
 .largeText{
-  font-size: 21px;
+  font-size: 16px;
+  @media (min-width: $break-small){
+    font-size: 21px;
+  }
 }
 </style>

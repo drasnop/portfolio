@@ -4,6 +4,9 @@
 
 <project-title name='Paperquest' title='A visualization tool to support literature review'/>
 
+<div class="projectNameMobile">Paperquest</div>
+<div class="projectTitleMobile">A visualization tool to support literature review</div>
+
 <div class='container'>
   <div class='row'>
     <div class='offset-sm-2 col-sm-8'>
@@ -39,4 +42,34 @@ export default{
 </script>
 
 <style lang='scss'>
+.projectNameMobile{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: $hero-bg-color;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: block;
+  @media (min-width: $break-small){
+    display: none;
+  }
+}
+
+.projectTitleMobile{
+  color: rgba(255,255,255,.7);
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 12px;
+  background-color: $hero-bg-color;
+  display: block;
+  @media (min-width: $break-small){
+    display: none;
+  }
+}
 </style>

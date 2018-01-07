@@ -1,10 +1,12 @@
 <template>
+
 <div class='pageTitleContainer'>
   <div class="pageTitle">
     <div class="projectName">{{name}}</div>
     <div class="projectTitle">{{title}}</div>
   </div>
 </div>
+
 </template>
 
 <script>
@@ -15,6 +17,7 @@ export default{
 </script>
 
 <style lang='scss'>
+
 .pageTitleContainer{
   position: sticky;
   top: 0;
@@ -23,6 +26,10 @@ export default{
   z-index: 100;
   background-color: $hero-bg-color;
   text-align: center;
+  display: none;
+  @media (min-width: $break-small){
+    display: block;
+  }
 }
 
 .pageTitle{

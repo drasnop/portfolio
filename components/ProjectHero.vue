@@ -40,12 +40,15 @@ export default{
 .backButton{
   position: fixed;
   left: 0;
-  top: 14px;
+  top: -2px;
   height: 60px;
   z-index: 101;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-width: $break-small){
+    top: 14px;
+  }
 }
 
 .backArrow{
