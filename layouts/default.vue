@@ -29,10 +29,37 @@ a:hover{
   position: relative;
 }
 
+.align-center{
+  text-align: center;
+}
+
+.bodyH2{
+  margin-top: 2em;
+  font-size: 22px;
+  @media (min-width: $break-small){
+    font-size: 24px;
+  }
+}
+
 .largeText{
   font-size: 16px;
   @media (min-width: $break-small){
-    font-size: 21px;
+    font-size: 20px;
+  }
+}
+
+.link-button{
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  color: $button-color;
+  background-color: $button-bg-color;
+  padding: 8px 16px;
+  border-radius: 100px;
+  box-shadow: $elevation-1;
+  &:hover{
+    box-shadow: $elevation-2;
+    color: $button-color;
   }
 }
 </style>
