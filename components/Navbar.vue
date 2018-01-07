@@ -2,10 +2,10 @@
 <div class='Navbar'>
   <div class='container'>
     <div class='row align-items-center'>
-      <div class='offset-sm-1 col-sm-2 col-3'>
+      <div class='offset-sm-1 col-sm-1 col-3'>
         <img src='/img/logo.svg' class='img-fluid'>
       </div>
-      <scrollactive class='nav offset-sm-4 col-sm-4 col-9'>
+      <scrollactive class='nav offset-sm-5 col-sm-4 col-9'>
         <a class='nav-item scrollactive-item' href='#about'>ABOUT</a>
         <a class='nav-item scrollactive-item' href='#projects'>PROJECTS</a>
         <a class='nav-item scrollactive-item' href='#contact'>CONTACT</a>
@@ -22,7 +22,7 @@ export default {
 
 <style lang='scss'>
 .Navbar{
-  padding: 8px 0;
+  padding: 12px 0;
   background-color: white;
   position: sticky;
   top: 0;
