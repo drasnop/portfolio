@@ -9,7 +9,7 @@
     <div class='row'>
       <div class='project-text offset-sm-1 col-sm-4'>
         <h1>Hi, I'm Antoine!</h1>
-        <p class='project-short-description'>I'm an interaction designer with a CS background. I love to design sleek interfaces with beautiful colors and subtle animations. And I know how to build them. I currently work at PDFTron, designing the next generation of document collaboration tools.</p>
+        <p class='project-short-description'>I'm a UX designer with a Computer Science background.  I love to distill complex user flows into clear interfaces with sleek visuals and subtle animations. Sometimes the best way to do that is to use my coding skills to build quick prototypes and test them. I currently work at PDFTron, designing the next generation of document collaboration tools.</p>
       </div>
 
       <div class='offset-sm-2 col-sm-4 align-self-end pos-relative'>
@@ -42,7 +42,7 @@
     <div class='row align-items-center'>
       <div class='project-text offset-sm-1 col-sm-4'>
         <h1>PaperQuest</h1>
-        <p class='project-short-description'>The literature review is a key component of academic research, that allows researchers to build upon each other’s work. We present PaperQuest, a visualization tool that supports efficient decision making, by only displaying the information useful at a given step of the exploration process.</p>
+        <p class='project-short-description'>The literature review is a key component of academic research, that allows researchers to build upon each other’s work. PaperQuest is a visualization tool that supports efficient decision making, by only displaying the information useful at a given step of the exploration process.</p>
         <link-button text="What is your quest?" to='/paperquest'></link-button>
       </div>
       <div class='offset-sm-2 col-sm-4 pos-relative'>
