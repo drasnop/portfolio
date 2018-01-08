@@ -27,8 +27,8 @@
     <div class='row align-items-center extra-padding-top'>
       <div class='project-text offset-sm-3 col-sm-4 order-sm-12'>
         <h1>Xodo</h1>
-        <p class='project-short-description'>Xodo is a cross-platform app for reading, annotating, and collaborating on documents. It has millions of users and a 4.6 rating in the Google PlayStore. I am in charge of researching and designing the user experience from end to end. I am leading the design of a brand new version of the app (in beta now), which will significantly expand its collaboration capabilities.</p>
-        <link-button text="Don't click this button" to='/about'></link-button>
+        <p class='project-short-description'>Xodo is a cross-platform app for reading, annotating, and collaborating on documents. It has millions of users and a 4.7 out of 5 rating in the Google PlayStore. I am leading the design of a brand new version of the app (in beta now), which will significantly expand its collaboration capabilities. I tackle a wide range of challenges, from product direction to user flows, wireframes, and visual identity.</p>
+        <div class="link-button align-self-center" text="Don't click this button" @click='xodoAlert'>Don't click this button</div>
       </div>
       <div class='offset-sm-1 col-sm-3 order-sm-1 pos-relative'>
         <img src='/img/xodo-android.png' class='img-fluid img-raised'>
@@ -83,6 +83,11 @@ import Contact from '~/components/Contact.vue'
 export default {
   components: {
     Logo, LinkButton, Navbar, Contact
+  },
+  methods: {
+    xodoAlert () {
+      alert('I told you not to click :)\n\nThis project is under development and not publicly released yet. Please contact me directly for more details.')
+    }
   }
 }
 </script>
