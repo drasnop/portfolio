@@ -59,32 +59,4 @@ export default{
   margin-top: 24px;
   margin-bottom: 60px;
 }
-
-.projectLinks{
-  margin-top: 1 * $h2-size-mobile;
-  display: flex;
-  justify-content: flex-start;
-  @media (min-width: $break-small){
-    margin-top: 2.5 * $h2-size-desktop;
-    position: sticky;
-    top: 120px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.projectLink{
-  color: $link-color;
-  display: inline-block;
-  font-size: 18px;
-  margin-bottom: 8px;
-  margin-right: 20px;
-  &:hover{
-    color: $link-color;
-    text-decoration: underline;
-  }
-  @media(min-width: $break-small){
-    display: block;
-  }
-}
 </style>
