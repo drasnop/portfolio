@@ -13,8 +13,8 @@
       </div>
 
       <div class='offset-sm-2 col-sm-4 align-self-end pos-relative'>
-        <img src='/img/antoine.jpg' class='img-fluid img-sizing'>
-        <img src='/img/antoine.jpg' class='img-fluid img-raised img-floating' style='left:15px; bottom:-80%'>
+        <img src='/img/antoine-small.jpg' class='img-fluid img-sizing'>
+        <img src='/img/antoine-small.jpg' class='img-fluid img-raised img-floating' style='left:15px; bottom:-80%'>
       </div>
     </div>
   </div>
