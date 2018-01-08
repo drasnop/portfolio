@@ -1,7 +1,7 @@
 <template>
 <div>
 
-<div class="hero pos-relative">
+<div class="hero pos-relative" :style='bgStyle'>
   <div class='container' style='z-index: 110'>
     <div class='row'>
       <div class="offset-sm-2 col-sm-8">
@@ -20,7 +20,14 @@
 <script>
 export default{
   name: 'ProjectHero',
-  props: ['image']
+  props: ['image', 'color'],
+  computed: {
+    bgStyle () {
+      if (this.color) {
+        return {backgroundColor: this.color}
+      }
+    }
+  }
 }
 </script>
 

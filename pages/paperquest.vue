@@ -1,11 +1,11 @@
 <template>
 <div>
-  <ProjectHero :image='image'/>
+  <ProjectHero :image='image' :color='color'/>
 
   <ProjectTitle :name='name' :title='title'/>
 
-  <div class="projectNameMobile">{{name}}</div>
-  <div class="projectTitleMobile">{{title}}</div>
+  <div class="projectNameMobile" :style='bgStyle'><div class='container'>{{name}}</div></div>
+  <div class="projectTitleMobile" :style='bgStyle'><div class='container'>{{title}}</div></div>
 
   <div class='container projectBody'>
   <div class='row'>
@@ -70,6 +70,7 @@ export default{
       name: 'PaperQuest',
       title: 'A visualization tool to support literature review',
       image: '/img/paperquest/paperquest.png',
+      color: '',
       links: [
         {
           text: 'demo',
@@ -89,6 +90,13 @@ export default{
   head () {
     return {
       title: 'Paperquest'
+    }
+  },
+  computed: {
+    bgStyle () {
+      if (this.color) {
+        return {backgroundColor: this.color}
+      }
     }
   }
 }

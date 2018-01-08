@@ -1,11 +1,11 @@
 <template>
 <div>
-  <ProjectHero :image='image'/>
+  <ProjectHero :image='image' :color='color'/>
 
   <ProjectTitle :name='name' :title='title'/>
 
-  <div class="projectNameMobile">{{name}}</div>
-  <div class="projectTitleMobile">{{title}}</div>
+  <div class="projectNameMobile" :style='bgStyle'><div class='container'>{{name}}</div></div>
+  <div class="projectTitleMobile" :style='bgStyle'><div class='container'>{{title}}</div></div>
 
   <div class='container projectBody'>
     <div class='row'>
@@ -57,6 +57,7 @@ export default{
       name: 'Twist & Pulse',
       title: 'Ephemeral adaptation to improve icon selection',
       image: '/img/twistandpulse/twistAndPulse.png',
+      color: '#999999',
       links: [
         {
           text: 'video',
@@ -73,10 +74,16 @@ export default{
       ]
     }
   },
-
   head () {
     return {
       title: 'Twise & Pulse'
+    }
+  },
+  computed: {
+    bgStyle () {
+      if (this.color) {
+        return {backgroundColor: this.color}
+      }
     }
   }
 }
