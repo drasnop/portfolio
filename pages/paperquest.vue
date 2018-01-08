@@ -7,11 +7,18 @@
 <div class="projectNameMobile">Paperquest</div>
 <div class="projectTitleMobile">A visualization tool to support literature review</div>
 
-<div class='container'>
+<div class='container projectBody'>
   <div class='row'>
-    <div class='offset-sm-2 col-sm-8'>
     
-    <br>
+    <div class='col-sm-2 order-sm-12 align-top-center'>
+      <div class='projectLinks'>
+        <div><a class='projectLink' href='//paperquest.github.io' target='_blank'>demo</a></div>
+        <div><a class='projectLink' href='//dl.acm.org/authorize?N42779' target='_blank'>paper</a></div>
+        <div><a class='projectLink' href='/res/PaperQuest-slides.pdf' target='_blank'>slides</a></div>
+      </div>
+    </div>
+
+    <div class='offset-sm-1 col-sm-8'>
 
     <h2 class='bodyH2'>Problem</h2>
     <p class="largeText">The literature review is a key component of academic research, that allows researchers to build upon each other’s work. Modern search engines enable fast access to publications, but there is a lack of support for filtering out the vast majority of papers that are irrelevant to the current research focus.</p>
@@ -40,14 +47,12 @@
       image='/img/paperquest/paperquest.png'
       caption='The final implementation'/>
 
-    <div class='align-center'>
+    <div class='align-top-center'>
       <a href='//paperquest.github.io' target="_blank" class='link-button'>See demo</a>
     </div>
 
-    <br>
-    <br>
-
     </div>
+
   </div>
 </div>
 
@@ -65,6 +70,31 @@ export default{
 </script>
 
 <style lang='scss'>
+.projectBody{
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+
+.projectLinks{
+  margin-top: 2.5 * $h2-size-mobile;
+  @media (min-width: $break-small){
+    margin-top: 2.5 * $h2-size-desktop;
+    position: sticky;
+    top: 120px;
+  }
+}
+
+.projectLink{
+  color: $link-color;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  &:hover{
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
+
 .projectNameMobile{
   position: sticky;
   top: 0;

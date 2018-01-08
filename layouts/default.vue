@@ -13,6 +13,7 @@ body {
 }
 
 a:hover{
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -29,15 +30,17 @@ a:hover{
   position: relative;
 }
 
-.align-center{
-  text-align: center;
+.align-top-center{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .bodyH2{
   margin-top: 2em;
-  font-size: 22px;
+  font-size: $h2-size-mobile;
   @media (min-width: $break-small){
-    font-size: 24px;
+    font-size: $h2-size-desktop;
   }
 }
 
