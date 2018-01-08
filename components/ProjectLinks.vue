@@ -36,6 +36,7 @@ export default{
     text-decoration: underline;
   }
   @media(min-width: $break-small){
+    margin-right: 0;
     display: block;
   }
 }

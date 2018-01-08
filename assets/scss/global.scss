@@ -39,6 +39,11 @@ a:hover{
   justify-content: center;
 }
 
+.vertically-center{
+  display: flex;
+  align-items: center;
+}
+
 .bodyH2{
   margin-top: 2em;
   font-size: $h2-size-mobile;
