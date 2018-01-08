@@ -1,12 +1,12 @@
 <template>
 
-<div class='pageTitleContainer'>
+<div class='pageTitleContainer' :style='bgStyle'>
   <div class='container'>
     <div class='row'>
       <div class="pageTitle offset-sm-1">
         <div class='center-align'>
-          <div class="projectName" :style='bgStyle'>{{name}}</div>
-          <div class="projectTitle" :style='bgStyle'>{{title}}</div>
+          <div class="projectName">{{name}}</div>
+          <div class="projectTitle">{{title}}</div>
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
 <script>
 export default{
   name: 'ProjectTitle',
-  props: ['name', 'title'],
+  props: ['name', 'title', 'color'],
   computed: {
     bgStyle () {
       if (this.color) {

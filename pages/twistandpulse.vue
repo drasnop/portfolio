@@ -2,7 +2,7 @@
 <div>
   <ProjectHero :image='image' :color='color'/>
 
-  <ProjectTitle :name='name' :title='title'/>
+  <ProjectTitle :name='name' :title='title' :color='color'/>
 
   <div class="projectNameMobile" :style='bgStyle'><div class='container'>{{name}}</div></div>
   <div class="projectTitleMobile" :style='bgStyle'><div class='container'>{{title}}</div></div>

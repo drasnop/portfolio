@@ -10,7 +10,7 @@
     </div>
   </div>
   <nuxt-link to="/" class="backButton col-sm-1 col-3">
-    <img class="backArrow" src="/img/chevron-left-white.svg" alt="back to home page">
+    <img class="backArrow" src="/icons/chevron-left-white.svg" alt="back to home page">
   </nuxt-link>
 </div>
 
