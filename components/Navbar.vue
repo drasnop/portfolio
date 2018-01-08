@@ -5,7 +5,7 @@
       <div class='offset-sm-1 col-sm-3 col-3'>
         <img src='/img/logo.svg' class='logo'>
       </div>
-      <scrollactive class='nav offset-sm-2 col-sm-4 col-9'>
+      <scrollactive class='nav offset-sm-3 col-sm-4 col-9'>
         <a class='nav-item scrollactive-item' href='#about'>ABOUT</a>
         <a class='nav-item scrollactive-item' href='#projects'>PROJECTS</a>
         <a class='nav-item scrollactive-item' href='#contact'>CONTACT</a>

@@ -3,7 +3,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: "portfolio",
+    title: "Antoine Ponsard - portfolio",
     meta: [
       {
         charset: "utf-8"
@@ -16,6 +16,14 @@ module.exports = {
         hid: "description",
         name: "description",
         content: "portfolio 2.0"
+      },
+      {
+        name: "msapplication-config",
+        content: "/img/favicons/browserconfig.xml"
+      },
+      {
+        name: "theme-color",
+        content: "#ffffff"
       }
     ],
     link: [
@@ -27,6 +35,36 @@ module.exports = {
       {
         rel: "stylesheet",
         href: "//fonts.googleapis.com/css?family=Open+Sans"
+      },
+      { 
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/img/favicons/apple-touch-icon.png"
+      },
+      { 
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/img/favicons/favicon-32x32.png"
+      },
+      { 
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/img/favicons/favicon-16x16.png"
+      },
+      { 
+        rel: "manifest",
+        href: "/img/favicons/manifest.json"
+      },
+      { 
+        rel: "mask-icon",
+        href: "/img/favicons/safari-pinned-tab.svg",
+        color: "#5bbad5"
+      },
+      { 
+        rel: "shortcut icon",
+        href: "/img/favicons/favicon.ico"
       }
     ]
   },
@@ -41,9 +79,7 @@ module.exports = {
   /*
    ** Customize the progress bar color
    */
-  loading: {
-    color: "#3B8070"
-  },
+  loading: false,
   /*
    ** Build configuration
    */

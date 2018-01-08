@@ -65,7 +65,12 @@ import ProjectTitle from '~/components/ProjectTitle'
 import CenterImage from '~/components/CenterImage'
 
 export default{
-  components: {ProjectHero, ProjectTitle, CenterImage}
+  components: {ProjectHero, ProjectTitle, CenterImage},
+  head () {
+    return {
+      title: 'Paperquest'
+    }
+  }
 }
 </script>
 
