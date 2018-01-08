@@ -123,14 +123,4 @@ export default {
   text-align: justify;
   margin-bottom: 24px;
 }
-
-.img-floating{
-  position: absolute;
-  max-width: calc(100% - 30px);
-}
-
-.img-sizing{
-  visibility: hidden;
-  max-width: 50%;
-}
 </style>

@@ -100,7 +100,7 @@ module.exports = {
       config.module.rules.forEach(rule => {
         if (rule.test.toString() === "/\\.vue$/") {
           rule.options.loaders.scss[2].options.data =
-            '@import "./assets/scss/constants.scss";';
+            '@import "./assets/scss/constants.scss";@import "./assets/scss/global.scss";';
         }
       });
     }

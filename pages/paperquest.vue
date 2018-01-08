@@ -1,13 +1,4 @@
 <template>
-<div>
-<ProjectHero image='/img/paperquest/paperquest.png'/>
-
-<ProjectTitle name='Paperquest' title='A visualization tool to support literature review'/>
-
-<div class="projectNameMobile">Paperquest</div>
-<div class="projectTitleMobile">A visualization tool to support literature review</div>
-
-<div class='container projectBody'>
   <div class='row'>
     
     <div class='col-sm-2 order-sm-12'>
@@ -54,18 +45,14 @@
     </div>
 
   </div>
-</div>
-
-</div>
 </template>
 
 <script>
-import ProjectHero from '~/components/ProjectHero'
-import ProjectTitle from '~/components/ProjectTitle'
 import CenterImage from '~/components/CenterImage'
 
 export default{
-  components: {ProjectHero, ProjectTitle, CenterImage},
+  layout: 'project',
+  components: {CenterImage},
   head () {
     return {
       title: 'Paperquest'
@@ -75,67 +62,4 @@ export default{
 </script>
 
 <style lang='scss'>
-.projectBody{
-  margin-top: 24px;
-  margin-bottom: 60px;
-}
-
-.projectLinks{
-  margin-top: 1 * $h2-size-mobile;
-  display: flex;
-  justify-content: flex-start;
-  @media (min-width: $break-small){
-    margin-top: 2.5 * $h2-size-desktop;
-    position: sticky;
-    top: 120px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.projectLink{
-  color: $link-color;
-  display: inline-block;
-  font-size: 18px;
-  margin-bottom: 8px;
-  margin-right: 20px;
-  &:hover{
-    color: $link-color;
-    text-decoration: underline;
-  }
-  @media(min-width: $break-small){
-    display: block;
-  }
-}
-
-.projectNameMobile{
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background-color: $hero-bg-color;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  display: block;
-  @media (min-width: $break-small){
-    display: none;
-  }
-}
-
-.projectTitleMobile{
-  color: rgba(255,255,255,.7);
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 12px;
-  background-color: $hero-bg-color;
-  display: block;
-  @media (min-width: $break-small){
-    display: none;
-  }
-}
 </style>
