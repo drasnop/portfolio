@@ -1,4 +1,13 @@
 <template>
+<div>
+  <ProjectHero :image='image'/>
+
+  <ProjectTitle :name='name' :title='title'/>
+
+  <div class="projectNameMobile">{{name}}</div>
+  <div class="projectTitleMobile">{{title}}</div>
+
+  <div class='container projectBody'>
   <div class='row'>
     
     <div class='col-sm-2 order-sm-12'>
@@ -41,17 +50,26 @@
     </div>
 
   </div>
+</div>
+
+</div>
+</template>
 </template>
 
 <script>
+import ProjectHero from '~/components/ProjectHero'
+import ProjectTitle from '~/components/ProjectTitle'
 import ProjectLinks from '~/components/ProjectLinks'
 import CenterImage from '~/components/CenterImage'
 
 export default{
   layout: 'project',
-  components: {ProjectLinks, CenterImage},
+  components: {ProjectHero, ProjectTitle, ProjectLinks, CenterImage},
   data () {
     return {
+      name: 'PaperQuest',
+      title: 'A visualization tool to support literature review',
+      image: '/img/paperquest/paperquest.png',
       links: [
         {
           text: 'demo',
@@ -59,7 +77,7 @@ export default{
         },
         {
           text: 'paper',
-          href: '//dl.acm.org/authorize?N42779'
+          href: '/res/Paperquest.pdf'
         },
         {
           text: 'slides',
@@ -78,3 +96,4 @@ export default{
 
 <style lang='scss'>
 </style>
+

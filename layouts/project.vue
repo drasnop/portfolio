@@ -1,27 +1,6 @@
 <template>
-<div>
-  <ProjectHero image='/img/paperquest/paperquest.png'/>
-
-  <ProjectTitle name='Paperquest' title='A visualization tool to support literature review'/>
-
-  <div class="projectNameMobile">Paperquest</div>
-  <div class="projectTitleMobile">A visualization tool to support literature review</div>
-
-  <div class='container projectBody'>
-    <nuxt/>
-  </div>
-
-</div>
+<nuxt/>
 </template>
-
-<script>
-import ProjectHero from '~/components/ProjectHero'
-import ProjectTitle from '~/components/ProjectTitle'
-
-export default{
-  components: {ProjectHero, ProjectTitle}
-}
-</script>
 
 <style lang='scss'>
 .projectNameMobile{

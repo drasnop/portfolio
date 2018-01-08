@@ -58,7 +58,7 @@
       <div class='project-text offset-sm-2 col-sm-4 order-sm-12'>
         <h1>Twist & Pulse</h1>
         <p class='project-short-description'>The concept of ephemeral adaptation was introduced to reduce visual search time in GUI menus, while preserving spatial consistency and minimizing distraction. We extend this concept to the visual search of app icons on smartphones in order to speed up launching apps from a homescreen</p>
-        <link-button text="Shake it up, baby" to='/about'></link-button>
+        <link-button text="Shake it up, baby" to='/twistandpulse'></link-button>
       </div>
       <div class='offset-sm-1 col-sm-4 order-sm-1 pos-relative'>
         <img src='/img/twistAndPulse.png' class='img-fluid img-raised'>
