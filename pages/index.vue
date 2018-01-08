@@ -31,7 +31,7 @@
         <div class="link-button align-self-center" text="Don't click this button" @click='xodoAlert'>Don't click this button</div>
       </div>
       <div class='offset-sm-1 col-sm-3 order-sm-1 pos-relative'>
-        <img src='/img/xodo-android.png' class='img-fluid img-raised'>
+        <img src='/img/xodo-small.png' class='img-fluid img-raised'>
       </div>
     </div>
   </div>
