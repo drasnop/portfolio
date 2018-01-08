@@ -10,11 +10,11 @@
 <div class='container projectBody'>
   <div class='row'>
     
-    <div class='col-sm-2 order-sm-12 align-top-center'>
+    <div class='col-sm-2 order-sm-12'>
       <div class='projectLinks'>
-        <div><a class='projectLink' href='//paperquest.github.io' target='_blank'>demo</a></div>
-        <div><a class='projectLink' href='//dl.acm.org/authorize?N42779' target='_blank'>paper</a></div>
-        <div><a class='projectLink' href='/res/PaperQuest-slides.pdf' target='_blank'>slides</a></div>
+        <a class='projectLink' href='//paperquest.github.io' target='_blank'>demo</a>
+        <a class='projectLink' href='//dl.acm.org/authorize?N42779' target='_blank'>paper</a>
+        <a class='projectLink' href='/res/PaperQuest-slides.pdf' target='_blank'>slides</a>
       </div>
     </div>
 
@@ -76,22 +76,30 @@ export default{
 }
 
 .projectLinks{
-  margin-top: 2.5 * $h2-size-mobile;
+  margin-top: 1 * $h2-size-mobile;
+  display: flex;
+  justify-content: flex-start;
   @media (min-width: $break-small){
     margin-top: 2.5 * $h2-size-desktop;
     position: sticky;
     top: 120px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .projectLink{
   color: $link-color;
-  display: block;
+  display: inline-block;
   font-size: 18px;
   margin-bottom: 8px;
+  margin-right: 20px;
   &:hover{
     color: $link-color;
     text-decoration: underline;
+  }
+  @media(min-width: $break-small){
+    display: block;
   }
 }
 
