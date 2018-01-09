@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
+    "d3": "3.5.4",
     "nuxt": "^1.0.0-rc11",
     "vue-scrollactive": "^0.5.1"
   },

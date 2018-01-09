@@ -1,6 +1,8 @@
 <template>
 <div>
 
+<Logo></Logo>
+
 <div class="navbar-offset" id='about'/>
 <Navbar/>
 
