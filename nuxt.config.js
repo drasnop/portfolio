@@ -76,8 +76,13 @@ module.exports = {
    ** Modules
    */
   plugins: ["~/plugins/vue-scrollactive"],
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-60712214-1'
+    }]
+  ],
   /*
-   ** Customize the progress bar color
+   ** Customize the progress bar
    */
   loading: false,
   /*
