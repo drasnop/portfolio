@@ -1,21 +1,15 @@
 <template>
   <div class="LogoContainer">
-    <div id="logo" class="logo">
-      <svg ng-mouseover="model.mouseover=true" ng-mouseleave="model.mouseover=false">
+    <div id="logo">
+      <svg>
           <clipPath id="disk-clipper">
               <circle class="arc"></circle>
           </clipPath>
           <g clip-path="url(#disk-clipper)" id="canvas">
-              <a id="left-half">
-                  <rect></rect>
-              </a>
-              <a id="right-half">
-                  <rect></rect>
-              </a>
-              <path id="boucle" class="letterP nonStatic arc" ng-hide="model.state==1 && !model.mouseover"></path>
+              <path id="boucle" class="letterP nonStatic arc"></path>
               <line id="vertical-line" class="letterA letterP"></line>
               <line id="horizontal-line" class="letterA"></line>
-              <line id="diagonal" class="letterA nonStatic" ng-hide="model.state==2 && !model.mouseover"></line>
+              <line id="diagonal" class="letterA nonStatic"></line>
               <path id="circle" class="arc"></path>
           </g>
       </svg>
@@ -101,16 +95,17 @@ var drawing = (function() {
 
       // make header full height, and prepare its shrinking animation
 
-      d3.select("header").style("height", window.innerHeight)
-         .style("padding-top", (window.innerHeight - height) / 2)
-         .style("padding-bottom", (window.innerHeight - height) / 2);
+      // d3.select("header").style("height", window.innerHeight)
+      //    .style("padding-top", (window.innerHeight - height) / 2)
+      //    .style("padding-bottom", (window.innerHeight - height) / 2);
 
       // Now that the page is covered by the header, change the body back to its original color
       //$("body").css("background-color", "#E6EBEE");
 
       // unroll the logo
 
-      var t0 = d3.select("header").transition().ease("linear").delay(500).duration(600);
+      // var t0 = d3.select("header").transition().ease("linear").delay(500).duration(600);
+      var t0 = d3.transition().ease("linear").delay(500).duration(600);
       var t1 = t0.transition().ease("linear").duration(300);
       var t2 = t1.transition().ease("linear").duration(300);
       var t3 = t2.transition().ease("linear").duration(300);
@@ -170,47 +165,58 @@ var drawing = (function() {
          .attr("x2", width / 2 * (1 - 1 / Math.sqrt(2)))
          .attr("y2", height / 2 * (1 + 1 / Math.sqrt(2)));
 
+      t4.select("#horizontal-line")
+         .attr("x2", width);
+
+      /* hide preloader */
+
+      var t5 = t4.transition().ease("linear").duration(200);
+      t5.select('#logo').attr('style','opacity: 0');
+
+      var t6 = t5.transition().ease("linear").duration(200);
+      t6.select('.LogoContainer').attr('style','opacity: 0');
+
       /* depending on screen size, the last two animations are synchronous or sequenced */
 
-      $(".logoText").width(0).css("visibility", "visible");
-      $("#logoTextImg").width(drawing.logoTextWidth());
-      $(".hint").css("opacity", 0);
+      // $(".logoText").width(0).css("visibility", "visible");
+      // $("#logoTextImg").width(drawing.logoTextWidth());
+      // $(".hint").css("opacity", 0);
 
-      var t5, t6, t7;
-      if (window.innerWidth < 768) {
-         /* one animation for the horizontal line and the text of the logo */
+      // var t5, t6, t7;
+      // if (window.innerWidth < 768) {
+      //    /* one animation for the horizontal line and the text of the logo */
 
-         t5 = t4.transition().ease("quad-in-out").duration(800);
+      //    t5 = t4.transition().ease("quad-in-out").duration(800);
 
-         t5.select("#horizontal-line").attr("x2", width);
-         t5.selectAll(".logoText").style("width", drawing.logoTextWidth());
+      //    t5.select("#horizontal-line").attr("x2", width);
+      //    t5.selectAll(".logoText").style("width", drawing.logoTextWidth());
 
-         /* fade in the hints above the logo */
+      //    /* fade in the hints above the logo */
 
-         t6 = t5.transition().ease("quad-in-out").delay(1100 + 1200 + 800 + 400).duration(300);
-         t7 = t6.transition().ease("quad-in-out").duration(300);
+      //    t6 = t5.transition().ease("quad-in-out").delay(1100 + 1200 + 800 + 400).duration(300);
+      //    t7 = t6.transition().ease("quad-in-out").duration(300);
 
-         $(".hint").css("top", "-80px");
-         t6.select(".left-hint").style("top", "-60px").style("opacity", 1);
-         t7.select(".right-hint").style("top", "-60px").style("opacity", 1);
-      } else {
-         /* animate the horizontal line, then the text of the logo */
+      //    $(".hint").css("top", "-80px");
+      //    t6.select(".left-hint").style("top", "-60px").style("opacity", 1);
+      //    t7.select(".right-hint").style("top", "-60px").style("opacity", 1);
+      // } else {
+      //    /* animate the horizontal line, then the text of the logo */
 
-         t5 = t4.transition().ease("linear").duration(200);
-         t6 = t5.transition().ease("quad-in-out").duration(800);
+      //    t5 = t4.transition().ease("linear").duration(200);
+      //    t6 = t5.transition().ease("quad-in-out").duration(800);
 
-         t5.select("#horizontal-line").attr("x2", width);
-         t6.selectAll(".logoText").style("width", drawing.logoTextWidth());
+      //    t5.select("#horizontal-line").attr("x2", width);
+      //    t6.selectAll(".logoText").style("width", drawing.logoTextWidth());
 
-         /* fade in the hints below the logo */
+      //    /* fade in the hints below the logo */
 
-         t7 = t6.transition().ease("quad-in-out").delay(1100 + 1200 + 150 + 800 + 400).duration(300);
-         var t8 = t7.transition().ease("quad-in-out").duration(300);
+      //    t7 = t6.transition().ease("quad-in-out").delay(1100 + 1200 + 150 + 800 + 400).duration(300);
+      //    var t8 = t7.transition().ease("quad-in-out").duration(300);
 
-         $(".hint").css("bottom", "-90px");
-         t7.selectAll(".left-hint").style("bottom", "-70px").style("opacity", 1);
-         t8.selectAll(".right-hint").style("bottom", "-70px").style("opacity", 1);
-      }
+      //    $(".hint").css("bottom", "-90px");
+      //    t7.selectAll(".left-hint").style("bottom", "-70px").style("opacity", 1);
+      //    t8.selectAll(".right-hint").style("bottom", "-70px").style("opacity", 1);
+      // }
 
    };
 
@@ -395,7 +401,8 @@ var drawing = (function() {
    };
 
    drawing.logoWidth = function() {
-      if (model.state <= 0) {
+      // TODO
+      if (true) {
          if (window.innerWidth > 360)
             return Math.min(drawing.largeInnerWidth, 2 / 10 * window.innerWidth);
          else
@@ -482,55 +489,45 @@ var drawing = (function() {
 
 export default{
   name: 'Logo',
-  created(){
-    //console.log(d3.select("svg"));
-    //drawing.initializeLogo(drawing.largeInnerWidth, drawing.largeInnerWidth, drawing.largeStroke);
+  mounted(){
+   drawing.initializeLogo(drawing.largeInnerWidth, drawing.largeInnerWidth, drawing.largeStroke);
+   var logoWidth = drawing.largeInnerWidth;
+   drawing.firstDrawLogo(logoWidth, logoWidth, drawing.largeStroke);
   }
 }
 
 </script>
 
-<style>
+<style lang='scss'>
 .LogoContainer{
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  transition: opacity .2s ease-in;
 }
 
 #logo {
   padding: 0 10px;
   display: inline-block;
   position: relative;
+  stroke: $logo-color;
+  fill: $logo-color;
+  transition: opacity .2s ease-in;
 }
 
 svg {
   margin: 0 auto;
-  cursor: pointer;
-  pointer-events: none;
 }
 
 .arc {
   stroke-width: 0;
-}
-
-#left-half, #right-half {
-  visibility: hidden;
-  pointer-events: all;
-}
-
-#left-half:hover ~ .letterA {
-  stroke: #48BDB5;
-  fill: #48BDB5;
-}
-
-#right-half:hover ~ .letterP {
-  stroke: #D87A63;
-  fill: #D87A63;
 }
 
 .squashed {
