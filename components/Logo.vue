@@ -176,6 +176,9 @@ var drawing = (function() {
       var t6 = t5.transition().ease("linear").duration(200);
       t6.select('.LogoContainer').attr('style','opacity: 0');
 
+      var t7 = t6.transition();
+      t7.select('.LogoContainer').attr('style','display:none');
+
       /* depending on screen size, the last two animations are synchronous or sequenced */
 
       // $(".logoText").width(0).css("visibility", "visible");
