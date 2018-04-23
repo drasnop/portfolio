@@ -32,7 +32,7 @@
       <p class='largeText'>Our goal was to support this lightweight decision process, but make it more powerful by leveraging previous searches and selected papers. Our most important decision was to represent the papers network as a zoomable and ordered list, instead of a traditional node-link diagram. We iterated extensively on: the overall layout of the visualization; the visual encoding of the paper metrics; and the browsing interactions. My friend Pax worked on retrieving the data, processing it and serving it in an Object-Oriented way, while I focused on the UI and the interactions.</p>
     
       <CenterImage
-        image='/img/paperquest/sketch.png'
+        image='/img/paperquest/sketch.jpg'
         caption='An early sketch of the UI, showing how papers would be organized in a "core" (left) and a "fringe" (center)'/>
 
       <CenterImage
