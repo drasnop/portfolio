@@ -490,12 +490,19 @@ var drawing = (function() {
    return drawing;
 })();
 
+let firstrun=true;
+
 export default{
   name: 'Logo',
   mounted(){
-   drawing.initializeLogo(drawing.largeInnerWidth, drawing.largeInnerWidth, drawing.largeStroke);
-   var logoWidth = drawing.largeInnerWidth;
-   drawing.firstDrawLogo(logoWidth, logoWidth, drawing.largeStroke);
+   if(firstrun){
+      drawing.initializeLogo(drawing.largeInnerWidth, drawing.largeInnerWidth, drawing.largeStroke);
+      var logoWidth = drawing.largeInnerWidth;
+      drawing.firstDrawLogo(logoWidth, logoWidth, drawing.largeStroke);
+      firstrun=false;
+   }else{
+      d3.select('.LogoContainer').attr('style','display:none');
+   }
   }
 }
 
