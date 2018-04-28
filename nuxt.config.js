@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         rel: "stylesheet",
-        href: "//fonts.googleapis.com/css?family=Open+Sans"
+        href: "//fonts.googleapis.com/css?family=Merriweather:900|Open+Sans:400"
       },
       { 
         rel: "apple-touch-icon",

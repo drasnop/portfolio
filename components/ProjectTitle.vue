@@ -50,19 +50,20 @@ export default{
 
 .pageTitle{
   color: white;
-  padding: 24px 0;
-  font-size: 26px;
+  padding: 24px 15px;
 }
 
 .projectName{
   display: inline-block;
-  font-weight: bold;
+  font-family: Merriweather;
+  font-size: 2em;
   @media (min-width: $break-small){
-    margin-right: 2em;  
+    margin-right: 30px;  
   }
 }
 
 .projectTitle{
+  font-size: 22px;
   display: inline-block;
   opacity: .7;
   font-weight: normal;

@@ -5,6 +5,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1,h2{
+  font-family: Montserrat;
+  font-family: Merriweather;
+  font-weight: 900;
+  color: $text-large;
+}
+
+h2{
+  font-size: 2em;
+}
+
 a:hover{
   cursor: pointer;
   text-decoration: none;
@@ -54,8 +65,9 @@ a:hover{
 
 .largeText{
   font-size: 16px;
+  line-height: 1.7em;
   @media (min-width: $break-small){
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 

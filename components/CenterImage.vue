@@ -19,7 +19,7 @@ export default{
 
 .caption{
   text-align: center;
-  color: $text-secondary;
+  color: $text-caption;
   margin-top: 14px;
 }
 </style>

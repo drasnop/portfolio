@@ -53,8 +53,12 @@ export default{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .15s ease-out;
   @media (min-width: $break-small){
     top: 14px;
+  }
+  &:hover{
+    transform: translateX(-5px);
   }
 }
 
