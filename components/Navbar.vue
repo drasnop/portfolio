@@ -1,16 +1,18 @@
 <template>
 <div class='Navbar'>
   <div class='container'>
-    <div class='row align-items-center'>
+    <scrollactive class='row align-items-center'>
       <div class='offset-sm-1 col-sm-3 col-3'>
-        <img src='/img/logo.svg' class='logo'>
+        <a class='scrollactive-item' href='#about'>
+          <img src='/img/logo.svg' class='logo'>
+        </a>
       </div>
-      <scrollactive class='nav offset-sm-3 col-sm-4 col-9'>
+      <div class='nav offset-sm-3 col-sm-4 col-9'>
         <a class='nav-item scrollactive-item' href='#about'>ABOUT</a>
         <a class='nav-item scrollactive-item' href='#projects'>PROJECTS</a>
         <a class='nav-item scrollactive-item' href='#contact'>CONTACT</a>
-      </scrollactive>
-    </div>
+      </div>
+    </scrollactive>
   </div>
 </div>
 </template>
