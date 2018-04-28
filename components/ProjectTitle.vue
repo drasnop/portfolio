@@ -33,7 +33,7 @@ export default{
 
 .pageTitleContainer{
   position: sticky;
-  top: 0;
+  top: -1px;
   left: 0;
   right: 0;
   z-index: 100;
