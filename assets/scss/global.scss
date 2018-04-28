@@ -67,9 +67,10 @@ a:hover{
   background-color: $button-bg-color;
   padding: 8px 16px;
   border-radius: 100px;
-  box-shadow: $elevation-1;
+  transition: .15s ease-out;
   &:hover{
-    box-shadow: $elevation-2;
+    box-shadow: 0px 7px 18px 1px rgba(0,0,0,.14);
+    transform: translateY(-2px);
     color: $button-color;
   }
 }

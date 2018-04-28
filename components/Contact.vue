@@ -62,6 +62,7 @@ export default {
   width: 32px;
   fill: white;
   opacity: 0.5;
+  transition: .15s;
   &:hover{
     opacity: 1;
   }
