@@ -59,10 +59,13 @@
       </div>
 
     </div>
+
+
   </div>
 
+<Contact/>
+
 </div>
-</template>
 </template>
 
 <script>
@@ -70,10 +73,11 @@ import ProjectHero from '~/components/ProjectHero'
 import ProjectTitle from '~/components/ProjectTitle'
 import ProjectLinks from '~/components/ProjectLinks'
 import CenterImage from '~/components/CenterImage'
+import Contact from '~/components/Contact'
 
 export default{
   layout: 'project',
-  components: {ProjectHero, ProjectTitle, ProjectLinks, CenterImage},
+  components: {ProjectHero, ProjectTitle, ProjectLinks, CenterImage, Contact},
   data () {
     return {
       name: 'Anchored Customization',
