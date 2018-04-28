@@ -58,11 +58,27 @@
   <div class='container'>
     <div class='row align-items-center'>
       <div class='project-text offset-sm-2 col-sm-4 order-sm-12'>
-        <h1>Twist & Pulse</h1>
-        <p class='project-short-description'>The concept of ephemeral adaptation was introduced to reduce visual search time in GUI menus, while preserving spatial consistency and minimizing distraction. We extend this concept to the visual search of app icons on smartphones in order to speed up launching apps from a homescreen</p>
-        <link-button text="Shake it up, baby" to='/twistandpulse'></link-button>
+        <h1 style='font-size:1.9em'>Anchored Customization</h1>
+        <p class='project-short-description'>Settings panels are the most common customization mechanism in today's
+software. Yet it is often difficult to find the setting you are looking for. I solve this problem by introducing the customization layer, which overlays settings directly on top of the application interface. </p>
+        <link-button text="Customize all the things" to='/customization'></link-button>
       </div>
       <div class='offset-sm-1 col-sm-4 order-sm-1 pos-relative'>
+        <img src='/img/customization-small.png' class='img-fluid img-raised'>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='section'>
+  <div class='container'>
+    <div class='row align-items-center'>
+      <div class='project-text offset-sm-1 col-sm-4'>
+        <h1>Twist & Pulse</h1>
+        <p class='project-short-description'>The concept of ephemeral adaptation was introduced to reduce visual search time in GUI menus, while preserving spatial consistency and minimizing distraction. We extend this concept to the visual search of app icons on smartphones in order to speed up launching apps from a homescreen.</p>
+        <link-button text="Shake it up, baby" to='/twistandpulse'></link-button>
+      </div>
+      <div class='offset-sm-2 col-sm-4 pos-relative'>
         <img src='/img/twistAndPulse.png' class='img-fluid img-raised'>
       </div>
     </div>
