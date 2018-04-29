@@ -21,6 +21,9 @@ $ npm run generate
 # generate static project as Single Page Application
 $ npm run generate --spa
 
+# test build
+$ firebase serve
+
 # deploy to firebase as SPA
 $ firebase deploy
 ```
