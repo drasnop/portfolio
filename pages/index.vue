@@ -11,7 +11,7 @@
     <div class='row'>
       <div class='project-text offset-sm-1 col-sm-4'>
         <h1>Hi, I'm Antoine!</h1>
-        <p class='project-short-description'>I'm a UX designer with a Computer Science background.  I love to distill complex user flows into clear interfaces with sleek visuals and subtle animations. Sometimes the best way to do that is to use my coding skills to build quick prototypes and test them. I currently work at PDFTron, designing the next generation of document collaboration tools.</p>
+        <p class='project-short-description'>I'm a programmer and UX designer with a passion for simplifying complex user flows into clean and effective interfaces. I have extensive experience building working prototypes with modern technologies for feedback and testing.</p>
       </div>
 
       <div class='offset-sm-2 col-sm-4 align-self-end pos-relative'>
@@ -152,7 +152,7 @@ export default {
 }
 
 .antoine-picture{
-  bottom:-70%;
+  bottom:-80%;
   @media (max-width: $break-small){
     bottom: -80%;
   }
