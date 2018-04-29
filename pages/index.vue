@@ -48,7 +48,9 @@
         <link-button text="What is your quest?" to='/paperquest'></link-button>
       </div>
       <div class='offset-sm-1 col-sm-5 pos-relative'>
-        <img src='/img/paperquest-small.png' class='img-fluid img-raised'/>
+        <nuxt-link to='/paperquest'>
+          <img src='/img/paperquest-small.png' class='img-fluid img-raised'/>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -64,7 +66,9 @@
         <link-button text="Customize all the things" to='/customization'></link-button>
       </div>
       <div class='offset-sm-1 col-sm-5 order-sm-1 pos-relative'>
-        <img src='/img/customization-small.png' class='img-fluid img-raised'>
+        <nuxt-link to='/customization'>
+          <img src='/img/customization-small.png' class='img-fluid img-raised'>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -79,7 +83,9 @@
         <link-button text="Shake it up, baby" to='/twistandpulse'></link-button>
       </div>
       <div class='offset-sm-1 col-sm-5 pos-relative'>
-        <img src='/img/twistAndPulse.png' class='img-fluid img-raised'>
+        <nuxt-link to='/twistandpulse'>
+          <img src='/img/twistAndPulse.png' class='img-fluid img-raised'>
+        </nuxt-link>
       </div>
     </div>
   </div>
