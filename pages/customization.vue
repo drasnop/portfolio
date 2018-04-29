@@ -53,7 +53,7 @@
         <br>
 
         <div class='align-top-center'>
-          <a href='//youtu.be/3J5Ng5RJ1Ik' target="_blank" class='link-button'>Watch video</a>
+          <a href='//drasnop.github.io/stencil/' target="_blank" class='link-button'>See demo</a>
         </div>
 
       </div>
